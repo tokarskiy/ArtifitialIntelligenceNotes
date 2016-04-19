@@ -16,7 +16,6 @@
 		- степень принадлежности элемента $x$ из
 		$X$ множеству $\widetilde{A}$.
 		
-		
 		Элементы с нулевой степенью принадлежности не включаются в множество.
 		
 		Деффазификацией называется процедура преобразования нечеткого множества в четкое число.
@@ -26,8 +25,6 @@
 		\[h(\tilde A) = sup(\mu_{\tilde A}(x))\]
 		\[h(\tilde A) = max(\mu_{\tilde A}(x))\]
 		
-		
-    
         $\tilde A =$ "небольшое натуральное число"
 		\[\tilde A = {(1, 1), (2, 1), (3, 0.9), (4, 0.8), (5, 0.6), (6, 0.5), (7, 0.4), (8. 0.2), (9, 0)}\]
 		
@@ -35,7 +32,7 @@
 		\[\tilde B = {(1, 0.5), (2, 1), (3, 0.6), (4, 0.4), (5, 0.2), (6, 0), ... (9, 0)}\]
 		
 		\subsection{Пересечение}
-    		Пересечением двух нечетких множеств А и В, заданных на одном универсуме Х, является 
+    			Пересечением двух нечетких множеств А и В, заданных на одном универсуме Х, является 
 			нечеткое множество С, заданном на том же универсуме Х, функция принадлежности которого
 			вычисляется
 			
@@ -50,29 +47,31 @@
 				$\tilde C$ = "небольшое нат. число, приближённо равное 2"
 			
 		\subsection{Дополнения}
-		    Дополнением $\tilde A$ на $X$ называется множество $\tilde A'$ , функция принадлежности элементов 
-		    которого вычисляется как $\mu_{\tilde A'}(x) = 1 - \mu_{\tilde A}(x)$
+			Дополнением $\tilde A$ на $X$ называется множество $\tilde A'$ , функция принадлежности элементов 
+			которого вычисляется как $\mu_{\tilde A'}(x) = 1 - \mu_{\tilde A}(x)$
 		
 			$\tilde A$ = "натуральное число, не являющееся небольшим"
 			
 			$\tilde A'$ = "нат. число, не являющееся приближенно равным 2"
 		\subsection{Объединение}
-		    Обозначается $\tilde A \cup \tilde B$
+		    	Обозначается $\tilde A \cup \tilde B$
 		
 			\[\mu_{\tilde A \cup \tilde B}(x) = max(\mu_{\tilde A}(x), \mu_{\tilde B}(x))\]
 			
 			Пример
-				\[\tilde C = \tilde A \cup \tilde B = \{(1, 1), (2, 1), (3, 0.9), (4, 0.8), (5, 0.6), (6, 0.5), (7, 0.4), (8, 0.2), (9, 0)\}\]
-				
-				$\tilde C$ = "или небольшое натуральное число, или число, приближенно равное 2"
+			\[\tilde C = \tilde A \cup \tilde B = \{(1, 1), (2, 1), (3, 0.9), (4, 0.8), 
+			(5, 0.6), (6, 0.5), (7, 0.4), (8, 0.2), (9, 0)\}\]
+			
+			$\tilde C$ = "или небольшое натуральное число, или число, приближенно равное 2"
 				
 		\subsection{Разность нечетких множеств}
-		    Обозначается $\tilde A \backslash \tilde B$
+		    	Обозначается $\tilde A \backslash \tilde B$
 		
 			\[\mu_{\tilde A \backslash \tilde B}(x) = max(\mu_{\tilde A}(x) -  \mu_{\tilde B}(x), 0)\]
 			
 			Пример
-			\[\tilde C = \tilde A \backslash \tilde B = \{(1, 0.5), (2, 0), (3, 0.3), (4, 0.4), (5, 0.4), (6, 0.5), (7, 0.4), (8, 0.2), (9, 0)\}\]
+			\[\tilde C = \tilde A \backslash \tilde B = \{(1, 0.5), (2, 0), (3, 0.3), (4, 0.4), 
+			(5, 0.4), (6, 0.5), (7, 0.4), (8, 0.2), (9, 0)\}\]
 			
 			$\tilde C$ = "небольшое нат. число, не являющееся приближенно равным 2"
 			
@@ -81,51 +80,52 @@
 			$\tilde C$ = "приближенно равное 2 нат. число, не являющееся небольшим"
 			
 		\subsection{Симметрическая разность} 
-		    Обозначается $\tilde A \ominus \tilde B$
+			Обозначается $\tilde A \ominus \tilde B$
 			\[\mu_{\tilde A \ominus \tilde B}(x) = \|\mu_{\tilde A}(x) - \mu_{\tilde B}(x)\|\]
 			
 		\subsection{Алгебраическое объединение (алгебраическая сумма)}
-		    Обозначается $\tilde A + \tilde B$
+			Обозначается $\tilde A + \tilde B$
 		
-	        \[\mu_{\tilde A + \tilde B}(x) = \mu_{\tilde A}(x) + \mu_{\tilde B}(x) - \mu_{\tilde A}(x) \cdot \mu_{\tilde B}(x)\]
+	        	\[\mu_{\tilde A + \tilde B}(x) = \mu_{\tilde A}(x) + \mu_{\tilde B}(x) - 
+	        	\mu_{\tilde A}(x) \cdot \mu_{\tilde B}(x)\]
 		    
 			\[\tilde C = \tilde A + \tilde B = \{(1, 1), (2, 1), (3, 0.96), (4, 0.88), \dots\}\]
 			
 		\subsection{Алгебраическое пересечение}
-		    Обозначается $\tilde A \cdot \tilde B$
+			Обозначается $\tilde A \cdot \tilde B$
 		
 			\[\mu_{\tilde A \cdot \tilde B}(x) = \mu_{\tilde A}(x) \cdot \mu_{\tilde B}(x)\]
 			
 			\[\tilde C = \tilde A \cdot \tilde B = \{(1, 0.5), (2, 1), (3, 0.54), (4, 0.32), \dots\}\]
 			
 		\subsection{Граничное пересечение} 
-		    Обозначается $\tilde A \otimes \tilde B$
-		    
-		    \[\mu_{\tilde A \otimes \tilde B}(x) = max(\mu_{\tilde A}(x) + \mu_{\tilde B}(x) - 1, 0)\]
+			Обозначается $\tilde A \otimes \tilde B$
+			
+			\[\mu_{\tilde A \otimes \tilde B}(x) = max(\mu_{\tilde A}(x) + \mu_{\tilde B}(x) - 1, 0)\]
 			
 			\[\tilde C = \tilde A \otimes \tilde B = \{(1, 0.5), (2, 1), (3, 0.5), (4, 0.2), (5, 0), \dots\}\]
 			
 		\subsection{Граничное объединение}
-		    Обозначается $\tilde A \oplus \tilde B$
+			Обозначается $\tilde A \oplus \tilde B$
 		
 			\[\mu_{\tilde A \oplus \tilde B}(x) = min(\mu_{\tilde A}(x) + \mu_{\tilde B}(x), 1)\]
 			
 			\[\tilde C = \tilde A \oplus \tilde B = \{(1, 1), (2, 1), (3, 1), (4, 1), (5, 0.8), (6, 0.5) ...\}\]
 			
 		\subsection{Драстическое пересечение}
-		    Обозначается $\tilde A \Delta \tilde B$
+		    	Обозначается $\tilde A \Delta \tilde B$
 		
 			\begin{equation}
-                \begin{matrix}
-                \mu_{\tilde A \Delta \tilde B}(x) & =
-                & \left\{
-                \begin{matrix}
-                \mu_{\tilde B}(x) & \mbox{if } \mu_{\tilde A }(x) = 1\\
-                \mu_{\tilde A}(x) & \mbox{if } \mu_{\tilde B }(x) = 1\\
-                0 & \mbox{otherwise }
-                \end{matrix} \right.
-                \end{matrix}
-            \end{equation}
+				\begin{matrix}
+					\mu_{\tilde A \Delta \tilde B}(x) & =
+					& \left\{
+					\begin{matrix}
+						\mu_{\tilde B}(x) & \mbox{if } \mu_{\tilde A }(x) = 1\\
+						\mu_{\tilde A}(x) & \mbox{if } \mu_{\tilde B }(x) = 1\\
+						0 & \mbox{otherwise }
+					\end{matrix} \right.
+				\end{matrix}
+			\end{equation}
 			
 			\[\tilde C = \tilde A \Delta \tilde B = \{(1, 0.5), (2, 0) ...\}\]
 		
@@ -133,16 +133,16 @@
 		    Обозначается $\tilde A \nabla \tilde B$
 		
 			\begin{equation}
-                \begin{matrix}
-                \mu_{\tilde A \nabla \tilde B}(x) & =
-                & \left\{
-                \begin{matrix}
-                \mu_{\tilde B}(x) & \mbox{if } \mu_{\tilde A }(x) = 0\\
-                \mu_{\tilde A}(x) & \mbox{if } \mu_{\tilde B }(x) = 0\\
-                1 & \mbox{otherwise }
-                \end{matrix} \right.
-                \end{matrix}
-            \end{equation}
+		                \begin{matrix}
+			                \mu_{\tilde A \nabla \tilde B}(x) & =
+			                & \left\{
+			                \begin{matrix}
+				                \mu_{\tilde B}(x) & \mbox{if } \mu_{\tilde A }(x) = 0\\
+				                \mu_{\tilde A}(x) & \mbox{if } \mu_{\tilde B }(x) = 0\\
+				                1 & \mbox{otherwise }
+			                \end{matrix} \right.
+		                \end{matrix}
+            		\end{equation}
 			
 		\subsection{Ядро нечеткого множества}
 			Ядро нечеткого множество - четкое множество элементов, для которых функция принадлежности
@@ -158,15 +158,15 @@
 		\subsection{Умножение нечеткого множества на число}
 			Тогда функция принадлежности 
 			\begin{equation}
-                \begin{matrix}
-                \mu_{c \cdot \tilde A}(x) & =
-                & \left\{
-                \begin{matrix}
-                c \cdot \mu_{\tilde A}(x) & \mbox{if } c \cdot \mu_{\tilde A}(x) < 1\\
-                1 & \mbox{otherwise }
-                \end{matrix} \right.
-                \end{matrix}
-            \end{equation}
+				\begin{matrix}
+					\mu_{c \cdot \tilde A}(x) & =
+					& \left\{
+					\begin{matrix}
+						c \cdot \mu_{\tilde A}(x) & \mbox{if } c \cdot \mu_{\tilde A}(x) < 1\\
+						1 & \mbox{otherwise }
+					\end{matrix} \right.
+				\end{matrix}
+			\end{equation}
 				
 		\subsection{Концентрирование} 
 			\[\mu_{\tilde A_C}(x) = \mu_{\tilde A}(x)^2\]
@@ -182,26 +182,26 @@
 			
 			\[\tilde C = \{(1, 0.5), ...\}\]
 	\section{Нейронные сети}
-	    \subsection{Биологический нейрон}
-		    Биологический нейрон состоит из
-    		\begin{itemize}
-    		    \item Тело клетки (сома)
-    				Содержит ядро с информацией и свойствами нейрона и плазмы (питание). 
-    			\item Ответвления двух видов
-    			    \begin{itemize}
-    			        \item Аксон (как правило, один)
-    				    \item Дендриты (много)
-    			    \end{itemize}
-    			    Нейрон принимает сигнал через дендриты и передаёт через аксон. 
-    			    Синапс - точка контакта между аксонами одного нейрона и дендритами другого.
-    		\end{itemize}
-		
+	    	\subsection{Биологический нейрон}
+			Биологический нейрон состоит из
+	    		\begin{itemize}
+	    		    	\item Тело клетки (сома)
+	    				Содержит ядро с информацией и свойствами нейрона и плазмы (питание). 
+	    			\item Ответвления двух видов
+					\begin{itemize}
+						\item Аксон (как правило, один)
+						\item Дендриты (много)
+					\end{itemize}
+					Нейрон принимает сигнал через дендриты и передаёт через аксон. 
+					Синапс - точка контакта между аксонами одного нейрона и дендритами другого.
+	    			\end{itemize}
+			
 		\subsection{Компоненты исскусственного нейрона}
-		    \begin{figure}[h!]
-                \centering
-                \includegraphics[scale=0.75]{Materials/b.png}
-                \caption{Структура исскуственного нейрона}
-            \end{figure}
+			\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.75]{Materials/b.png}
+			\caption{Структура исскуственного нейрона}
+			\end{figure}
     		\begin{itemize}
     		        \item Весовые коэффициенты - $w_1, w_2 \dots w_n$
     				Каждый вход $x_i$ имеет свой синапсический вес $w_i$, который является мерой
